@@ -1,0 +1,23 @@
+<html>
+  <head>
+    <title><%= page_title %></title>
+  </head>
+  <body>
+    <main>
+      <h1><%= heading %></h1>
+      <form method="post" action="/new">
+        <label>
+          Author name:
+          <input type="text" name="user" required />
+        </label>
+
+        <label>
+          Message:
+          <input type="text" name="messageText" required />
+        </label>
+
+        <button type="submit">Send</button>
+      </form>
+    </main>
+  </body>
+</html>

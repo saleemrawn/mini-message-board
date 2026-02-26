@@ -1,0 +1,20 @@
+<html>
+  <head>
+    <title><%= page_title %></title>
+  </head>
+  <body>
+    <main>
+        <a href="/new">+ New message</a>
+        <ul>
+            <% messages.forEach((message) => { %>
+                <li>
+                    <div><%= message.user %></div>
+                    <div><%= message.text %></div>
+                    <div><%= message.added %></div>
+                    <a href="/message/<%= message.id %>" target="_blank">Open</a>
+                </li>
+            <% }); %>
+        </ul>
+    </main>
+  </body>
+</html>
