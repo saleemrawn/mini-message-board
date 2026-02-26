@@ -1,2 +1,3 @@
-# mini-message-board
-The Odin Project (Mini Message Board)
+# Mini Messageboard
+
+The Odin Project (Mini Messageboard)
