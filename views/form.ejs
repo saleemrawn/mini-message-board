@@ -5,6 +5,7 @@
   <body>
     <main>
       <h1><%= heading %></h1>
+      <%- include("partials/errors.ejs") %>
       <form method="post" action="/new">
         <label>
           Author name:
