@@ -4,9 +4,12 @@
   </head>
   <body>
     <main>
-      <div><%= user %></div>
-      <div><%= text %></div>
-      <div><%= added %></div>
+      <% message.forEach((msg) => { %>
+        <div><%= msg.author %></div>
+        <div><%= msg.message %></div>
+        <div><%= msg.created_at %></div>
+      <% }) %> 
+      <a href="/">Back to home</a>
     </main>
   </body>
 </html>
