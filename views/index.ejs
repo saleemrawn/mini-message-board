@@ -8,10 +8,10 @@
         <ul>
             <% messages.forEach((message) => { %>
                 <li>
-                    <div><%= message.user %></div>
-                    <div><%= message.text %></div>
-                    <div><%= message.added %></div>
-                    <a href="/message/<%= message.id %>" target="_blank">Open</a>
+                    <div><%= message.author %></div>
+                    <div><%= message.message %></div>
+                    <div><%= message.created_at %></div>
+                    <a href="/message/<%= message.id %>">Open</a>
                 </li>
             <% }); %>
         </ul>
